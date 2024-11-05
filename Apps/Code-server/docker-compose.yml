@@ -4,9 +4,9 @@ services:
     image: linuxserver/code-server:4.93.1
     restart: unless-stopped
     environment:
-      PUID: $PUID
-      PGID: $PGID
-      TZ: $TZ
+      PUID: 0
+      PGID: 0
+      TZ: America/Sao_Paulo
       PASSWORD: ''
       HASHED_PASSWORD: ''
       SUDO_PASSWORD: ''
@@ -68,8 +68,8 @@ x-casaos:
   tagline:
     en_us: VS Code running on a remote server, accessible through the browser. - Code on your Chromebook, tablet, and laptop with a consistent dev environment. - If you have a Windows or Mac workstation, more easily develop for Linux. - Take advantage of large cloud servers to speed up tests, compilations, downloads, and more. - Preserve battery life when you're on the go. - All intensive computation runs on your server. - You're no longer running excess instances of Chrome.
   developer: LinuxServer.io
-  author: WisdomSky
-  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server.png
+  author: Chiappa
+  icon: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png
   title:
     en_us: Code server
